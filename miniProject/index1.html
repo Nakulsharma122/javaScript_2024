@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page </title>
+    <link rel = "stylesheet" href = "style1.css"> 
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <!-- <div class="small-images">
+                    <img src="download (1).jpg" onclick="clickimg(this)">
+                    <img src="download (1).jpg" onclick="clickimg(this)">
+                    <img src="download (1).jpg" onclick="clickimg(this)">
+                    <img src="download (1).jpg" onclick="clickimg(this)">
+                    <img src="download (1).jpg" onclick="clickimg(this)">
+                
+                </div> -->
+                <div class="main-images">
+                    <img src="newiphoneimage.jpg" id="imagebox"> 
+
+                </div>
+            </div>
+            </div>
+            <div class="text">
+                <div class="context">
+                    <!-- <p class = "brand">Brand : Apple</p> -->
+                    <h2>APPLE iPhone 12 (White, 64 GB)</h2>
+                    <div class="review">
+                        <span> Review - (4.6)</span>
+                        <span class="fa fa-star"> </span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377; 77,900</p>
+                        <strike>&#8377; 89,900</strike>
+                    </div>
+                    <p> 
+                        Size: <select name="size" id="">
+                            <option value="select colour">select colour</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="purple">purple</option>
+                            
+                        </select>
+                    </p>
+                    <p>Quantity <input type="text" value="1"></p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to Cart
+                    </button>
+                    <!-- <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        Buy Now
+                    </button>
+                </div> -->
+
+                <br>
+                <br>
+                <div class="Description">
+   <ul>               
+ <li><h4>Brand</h4></li>	Apple 
+<li><h4>Model Name	</h4> </li>iPhone 12
+<li><h4>Network Service Provider</h4></li>	Unlocked for All Carriers
+<li><h4>Operating System</h4></li>	iOS 14
+<li><h4>Cellular Technology</h4></li>	5G
+</ul>
+<br>
+<br>
+<br>
+<ul><h4>About this item
+    <br></h4>
+    <br>
+<li>6.1-inch (15.5 cm diagonal) Super Retina XDR display.</li>
+<li>Ceramic Shield, tougher than any smartphone glass.</li>
+<li>A14 Bionic chip, the fastest chip ever in a smartphone.</li>
+<li>Advanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording.</li>
+<li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording.</li>
+<li>Industry-leading IP68 water resistance.</li>
+<li>Supports MagSafe accessories for easy attachment and faster wireless charging.</li>
+<li>iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and more.</li>
+</ul>
+                </div>
+                
+            </div>
+
+            <!-- <div class="reviewproduct">
+                <p style="text-align: center;">Please review the product .</p>
+            </div> -->
+            
+        </div>
+
+    </div>
+   
+  
+
+
+
+    <script>
+        function clickimg(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>
