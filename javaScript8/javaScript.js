@@ -49,7 +49,7 @@
 // });
 
 
-//                    Every   Function  acts as a logical and 
+//                    Every   Function -  acts as a logical and 
 
 
 //  let nums =[2,4,6, 7, 10].every((el) => el%2 == 0);
@@ -133,13 +133,7 @@
 // function func (...arr){
 //   // do something
 // }
-// let arr = [1,2,3, 4,5, 6,14, 15];
-// const nums = Math.min(...arr);
-// console.log (nums);
-
-
-// let string = "Apnacollege";
-// console.log(...string);
+// 
 
 
  //                               Spread (Array literals )
@@ -222,3 +216,53 @@
 //                            Practice question 
 
 //              Square and sum the array elements using the arrow function and then find the average of the array.
+ 
+
+// let nums = [1,2,3,4,5];
+// let double = nums.map((el)=>{
+//   return el * el;
+// })
+// console.log (double);
+
+// let sums = double.reduce((max,el)=>{
+//   return max+el;
+// })
+// console.log(sums);
+// let average = sums /5;
+// console.log(average);
+
+// Create a new array using the map function whose each element is equal to the original element plus 5
+//      let nums = [1,2,3,4,5];
+//    let addition = nums.map((el) =>{
+//     return el +5;
+//     })
+//     console.log(addition);
+
+//  Create a new array whose elements are in uppercase of words present in the original array.
+
+// let strings = ["adam", "bob", "catlyn", "donald", "eve"];
+// console.log(strings.map((strings)=>{
+//    return strings.toUpperCase();
+// }))
+
+
+// Write a function called doubleAndReturnArgs which accepts an array and a
+// variable number of arguments. The function should return a new array with the original
+// array values and all of the additional arguments doubled.
+
+// const doubleAndReturnArgs = (arr, ...args)=>[
+  
+//    ...arr,
+//    ...args.map((args)=> args  *2)
+// ];
+// console.log(doubleAndReturnArgs([1,2,3],4,4));
+
+// Write a function called mergeObjects that accepts two objects and returns a new
+// object which contains all the keys and values of the first object and second object
+
+const mergeObject = (objects1 , objects2)=>(
+
+
+  {...objects1 , ...objects2}
+);
+mergeObject({ a: 1, b: 2 }, { c: 3, d: 4 });
